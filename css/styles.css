@@ -1,3 +1,33 @@
 .{
     font-family: 'Itim', cursive;
 }
+#logo{
+    font-family: 'Zhi Mang Xing', cursive;
+}
+.my-navbar{
+    display: flex; flex-direction: row;
+    margin-right: 0%;
+}
+#home{
+    padding-left: 1%; padding-right: 1%;
+}
+#careers{
+    padding-left: 1%; padding-right: 1%;
+}
+#sign-in{
+    padding-left: 1%; padding-right: 1%;
+}
+#log-in{
+    padding-left: 1%; padding-right: 1%;
+}
+h1{
+    text-align: center;
+}
+
+.subscribe{
+    display: flex; flex-direction: row;
+}
+.location{
+    display: flex; flex-direction: row;
+    justify-content: space-between;
+}
