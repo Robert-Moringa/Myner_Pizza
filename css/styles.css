@@ -68,7 +68,7 @@ footer{
 .location{
     display: flex; flex-direction: row;
     justify-content: space-between;
-    margin-top: 2%;
+    margin-top: 2%; margin-left: 8%; margin-right: 8%;
 }
 
 .location>div>p{
