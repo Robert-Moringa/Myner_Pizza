@@ -68,6 +68,12 @@ footer{
 .location{
     display: flex; flex-direction: row;
     justify-content: space-between;
+    margin-top: 2%;
+}
+
+.location>div>p{
+    font-size: 80%;
+    line-height: 1em;
 }
 .social{
     display: flex;
