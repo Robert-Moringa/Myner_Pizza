@@ -32,6 +32,12 @@ h1{
     vertical-align: middle;
 }
 
+.btn1{
+    width: 100%;
+    background-color: rgba(165, 42, 42, 1);
+    color: white;
+}
+
 footer{
     background-color: rgba(165, 42, 42, 1);
     color: white;
