@@ -1,0 +1,10 @@
+.order-body{
+    text-align: center;
+    color: rgba(165, 42, 42, 1);
+}
+#form{
+    display: flex; flex-direction: column;
+}
+.toppings-choices{
+    display: flex;
+}
