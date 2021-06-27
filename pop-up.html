@@ -44,7 +44,7 @@
 
                 <label for="select">How big do we get?</label>
                 <select name="" id="size">
-                    <option value="550">Small: <span style="color: red;">Kshs. 550</span></option>
+                    <option style="color: rgba(165, 42, 42, 1);" value="550">Small: <span style="color: red;">Kshs. 550</span></option>
                     <option value="850">Medium: <span style="color: red;">Kshs. 850</span></option>
                     <option value="1200">Large: <span style="color: red;">Kshs. 1200</span></option>
                 </select>
@@ -75,17 +75,26 @@
                 </div>
 
                 <label for="delivery">We need to act fast. Where do we deliver it?</label>
-                <div>
+                <div id="delivery">
                     <input type="radio" id="pick-up" name="delivery" value="0">
                     <label for="pick-up">No, thanks. I will pick it up</label>
                 </div>
 
-                <div>
+                <div id="delivery">
                     <input type="radio" id="deliver-it" name="delivery" value="200">
                     <label for="deliver-it">Yes, please. Kindly deliver it.</label>
                 </div>
 
-                <button id="place-order">PLACE OREDR</button>
+                <div class="place-of-delivery">
+                    <label for="palce">Share your location please for the sake of the boda guy</label>
+                    <input type="text" style="display: flex; flex-direction: column;" placeholder="Enter PLACE OF DELIVERY...">
+                </div>
+
+                <div id="button">
+                    <button id="place-order">PLACE ORDER</button>
+                </div>
+
+
             </div>
         </div>
         <div class="col-sm-3"></div>

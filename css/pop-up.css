@@ -14,7 +14,33 @@ select{
     display: flex;
     margin-left: 15%;
 }
+/* option{
+    color: rgba(165, 42, 42, 1);
+} */
+
+label{
+    margin-top: 2%;
+}
+
+#delivery{
+    line-height: 1em;
+}
 .toppings-choices{
     display: flex; flex-direction: row;
     justify-content: space-around;
+    margin-left: 10%; margin-right: 10%;
+}
+#button{
+    
+    margin-top: 2%;
+    display: flex; justify-content: center;
+}
+
+button{
+    border: 2px solid rgba(165, 42, 42, 0.5) ;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(165, 42, 42, 1);
+    border-radius: 10px;
+    width: 50%;
 }
