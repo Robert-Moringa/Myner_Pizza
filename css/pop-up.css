@@ -2,6 +2,14 @@
     display: none;
 }
 
+.toggle{
+    display: none;
+}
+
+#location{
+    margin-left: 2%;
+}
+
 .order-body{
     text-align: center;
     color: rgba(165, 42, 42, 1);

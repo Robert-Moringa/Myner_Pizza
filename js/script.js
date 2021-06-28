@@ -28,7 +28,11 @@ function total(){
 
     var name = document.getElementById("flavor").value;
 
+    var location = document.getElementById("place").value;
+
     document.getElementById("order-name").innerHTML = "<li>"+ name + "</li>";
+
+    document.getElementById("location").innerHTML = "Delivery to; " + location;
 
     document.getElementById("total").innerHTML = "Total: Kshs. "+ total;
 };
@@ -36,9 +40,11 @@ total();
 
 
 $(document).ready(function(){
-    $("#place-order").submit(function(){
+    $("button").click(function(){
         var location= $("#place").val();
         alert("We have received your order. We will deliver it at " + location);
+
+        $(".toggle").show();
       });
          
 });
