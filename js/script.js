@@ -32,7 +32,7 @@ function total(){
 
     document.getElementById("order-name").innerHTML = "<li>"+ name + "</li>";
 
-    document.getElementById("location").innerHTML = "Delivery to; " + location;
+    document.getElementById("location").innerHTML = "Delivery to; " + location +" Ksh. 200";
 
     document.getElementById("total").innerHTML = "Total: Kshs. "+ total;
 };
