@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="js/jQuery.js"></script>
+    <script src="js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -57,7 +59,7 @@
                     <option value="250">Gluten-free</option>
                 </select>
 
-                <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+                <label for="Toppings">Select Your Toppings at sh. 60 each</label><br>
                 <div class="toppings-choices">
                     <div class="custom-control custom-checkbox custom-control-inline">
                         <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
@@ -75,30 +77,37 @@
                 </div>
 
                 <label for="delivery">We need to act fast. Where do we deliver it?</label>
-                <div id="delivery">
-                    <input type="radio" id="pick-up" name="delivery" value="0">
-                    <label for="pick-up">No, thanks. I will pick it up</label>
-                </div>
-
-                <div id="delivery">
-                    <input type="radio" id="deliver-it" name="delivery" value="200">
-                    <label for="deliver-it">Yes, please. Kindly deliver it.</label>
-                </div>
+                <select name="" id="delivery">
+                    <option value="0">No, thanks. I will pick it up</option>
+                    <option value="200">Yes, please. Kindly deliver it.</option>
+                </select>
+                
 
                 <div class="place-of-delivery">
                     <label for="palce">Share your location please for the sake of the boda guy</label>
-                    <input type="text" style="display: flex; flex-direction: column;" placeholder="Enter PLACE OF DELIVERY...">
+                    <div class="enter-location">
+                        <input type="text" style="width: 60%;" id="place" placeholder="Enter PLACE OF DELIVERY...">
+                    </div>
                 </div>
 
                 <div id="button">
-                    <button id="place-order">PLACE ORDER</button>
+                    <button type="submit" id="place-order" onclick="total()" >PLACE ORDER</button>
                 </div>
 
 
             </div>
         </div>
-        <div class="col-sm-3"></div>
+        <div class="col-sm-2">
+            <div class="total">
+                <h4 id="summary">ORDER SUMMARY</h4>
+                <p id="order-name"></p>
+                <h5 id="total"></h5>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
     </div>
+    <script src="js/jQuery.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>

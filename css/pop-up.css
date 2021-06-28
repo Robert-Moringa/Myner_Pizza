@@ -1,3 +1,7 @@
+#order-form{
+    display: none;
+}
+
 .order-body{
     text-align: center;
     color: rgba(165, 42, 42, 1);
@@ -43,4 +47,23 @@ button{
     background-color: rgba(165, 42, 42, 1);
     border-radius: 10px;
     width: 50%;
+}
+.place-of-delivery{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.enter-location{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+input{
+    border: 2px solid rgba(165, 42, 42, 0.5) ;
+}
+
+.total{
+    
 }
