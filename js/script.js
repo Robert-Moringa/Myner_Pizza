@@ -28,7 +28,7 @@ function total(){
 
     var name = document.getElementById("flavor").value;
 
-    document.getElementById("order-name").innerHTML = "Pizza flavor: " + name;
+    document.getElementById("order-name").innerHTML = "<li>"+ name + "</li>";
 
     document.getElementById("total").innerHTML = "Total: Kshs. "+ total;
 };
