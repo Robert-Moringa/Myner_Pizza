@@ -2,10 +2,12 @@
     display: none;
 }
 
-.toggle, .orders-made{
+.toggle{
     display: none;
 }
-
+.toggle-details{
+    display: none;
+}
 
 #location{
     margin-left: 2%;

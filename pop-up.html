@@ -32,19 +32,8 @@
     </header>
 
     <div class="row">
-        <div class="col-sm-3 orders-made">
-            <h5>Orders made so far!</h5>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Cost</th>
-                    <th>Delivery</th>
-                    <th>Total Cost</th>
-                </tr>
-                <tr>
-                    <tbody id="orders-made"></tbody>
-                </tr>
-            </table>
+        <div class="col-sm-3">
+            
         </div>
         <div class="col-sm-6 order-body">
             <h3 class="form-intro">Order your pizza!</h3>
@@ -125,13 +114,29 @@
                     <button type="submit" id="place-order" onclick="total()" >PLACE ORDER</button>
                 </div>
 
-                <div class="button">
-                    <button type="submit" id="place-order" >CONTINUE SHOPPING</button>
-                </div>
+                <!-- <div class="button">
+                    <button type="submit" id="continue" >CONTINUE SHOPPING</button>
+                </div> -->
 
             </div>
         </div>
         <div class="col-sm-2">
+
+            <div class="toggle-details">
+                <h5>Orders made so far!</h5>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Cost</th>
+                        <th>Delivery</th>
+                        <th>Total Cost</th>
+                    </tr>
+                    <tr>
+                        <tbody id="orders-made"></tbody>
+                    </tr>
+                </table>
+            </div>
+            
             <div class="total">
                 <h4 id="summary">ORDER SUMMARY</h4>
                 
