@@ -1,17 +1,3 @@
-//business logic
-// function Order(name, total, delivery) {
-//     this.orderName = name;
-//     this.total = total;
-//     this.delivery = delivery;
-//   }
-  
-  
-//   Order.prototype.wholeOrder = function() {
-//     return this.orderName;
-//   }
-  
-
-
 
 function total(){
     var name = document.getElementById("flavor").value;
@@ -20,11 +6,13 @@ function total(){
 
     var crust = parseInt(document.getElementById("crust").value);
 
+    var quantity = parseInt(document.getElementById("number").value);
+
     var toppings= 60;
 
     var delivery = parseInt(document.getElementById("delivery").value);
 
-    var total = price+crust+toppings+delivery;
+    var total = ((price+crust+toppings) * quantity)+ delivery;
 
     var name = document.getElementById("flavor").value;
 
@@ -40,11 +28,19 @@ total();
 
 
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#place-order").click(function(){
         var location= $("#place").val();
         alert("We have received your order. We will deliver it at " + location);
-
         $(".toggle").show();
       });
+
+      function PizzaSummary( name, total, delivery){
+          this.name= name;
+          this.total= total;
+          this.delivery= delivery;
+      }
+
+      
+
          
 });

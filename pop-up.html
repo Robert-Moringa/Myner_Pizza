@@ -32,7 +32,20 @@
     </header>
 
     <div class="row">
-        <div class="col-sm-3"></div>
+        <div class="col-sm-3 orders-made">
+            <h5>Orders made so far!</h5>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Cost</th>
+                    <th>Delivery</th>
+                    <th>Total Cost</th>
+                </tr>
+                <tr>
+                    <tbody id="orders-made"></tbody>
+                </tr>
+            </table>
+        </div>
         <div class="col-sm-6 order-body">
             <h3 class="form-intro">Order your pizza!</h3>
             <p>THERE’S NO BETTER FEELING IN THE WORLD THAN A WARM PIZZA BOX IN YOUR LAP</p>
@@ -76,6 +89,24 @@
       
                 </div>
 
+                <div class="number row">
+                    <label for="number">How many of this pizzas do you need?</label>
+                    <div class="select" style="display: flex; justify-content: center;">
+                        <select name="" id="number" style="margin-left: 2%; width: 10%;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+
                 <label for="delivery">We need to act fast. Where do we deliver it?</label>
                 <select name="" id="delivery">
                     <option value="0">No, thanks. I will pick it up</option>
@@ -94,6 +125,9 @@
                     <button type="submit" id="place-order" onclick="total()" >PLACE ORDER</button>
                 </div>
 
+                <div class="button">
+                    <button type="submit" id="place-order" >CONTINUE SHOPPING</button>
+                </div>
 
             </div>
         </div>
