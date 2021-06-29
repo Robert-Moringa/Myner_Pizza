@@ -12,6 +12,8 @@ function total(){
 
     var delivery = parseInt(document.getElementById("delivery").value);
 
+    var cost= ((price+crust+toppings) * quantity);
+
     var total = ((price+crust+toppings) * quantity)+ delivery;
 
 
@@ -23,10 +25,10 @@ function total(){
 
     document.getElementById("total").innerHTML = "Total: Kshs. "+ total;
 
-    document.getElementById("orders-made").innerHTML = "<td>"+ name + "</td>";
-    document.getElementById("orders-made").innerHTML = "<td>"+ total+ "</td>";
-    document.getElementById("orders-made").innerHTML = "<td>"+ delivery+ "</td>";
-    document.getElementById("orders-made").innerHTML = "<td>"+ total+ "</td>";
+    document.getElementById("orders-name").innerHTML = name;
+    document.getElementById("orders-cost").innerHTML = "Flavor cost: " + cost;
+    document.getElementById("orders-delivery").innerHTML =  "Delivery cost: " + delivery;
+    document.getElementById("orders-total").innerHTML =  "Grand total: " +total;
 };
 total();
 
@@ -36,6 +38,7 @@ $(document).ready(function(){
         var location= $("#place").val();
         alert("We have received your order. We will deliver it at " + location);
         $(".toggle").show();
+        $(".toggle-details").show();
       });
 
       function PizzaSummary( name, total, delivery){
@@ -47,10 +50,6 @@ $(document).ready(function(){
       var name = document.getElementById("flavor").value;
       var total = ((price+crust+toppings) * quantity)+ delivery;
 
-      $("#continue").click(function(){
-        $(".toggle-details").show();
-
-      });
 
       
 
